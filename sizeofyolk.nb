@@ -1,0 +1,382 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13414,        372]
+NotebookOptionsPosition[     12488,        347]
+NotebookOutlinePosition[     12883,        363]
+CellTagsIndexPosition[     12840,        360]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"FindMinimum", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Cos", "[", 
+              RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], 
+             "*", 
+             RowBox[{"Cos", "[", 
+              RowBox[{"\[Alpha]", "+", "\[Eta]"}], "]"}]}], "+", 
+            RowBox[{
+             RowBox[{"Sin", "[", 
+              RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], 
+             "*", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"\[Alpha]", "+", "\[Eta]"}], "]"}]}], "+", 
+            RowBox[{"Sin", "[", "\[Eta]", "]"}]}], ")"}], "*", 
+          RowBox[{"Cos", "[", 
+           RowBox[{
+           "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+           "]"}]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Cos", "[", 
+              RowBox[{
+              "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+              "]"}], "*", 
+             RowBox[{"Cos", "[", 
+              RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]"}], "]"}]}], 
+            "+", 
+            RowBox[{
+             RowBox[{"Sin", "[", 
+              RowBox[{
+              "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+              "]"}], "*", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]"}], "]"}]}], 
+            "+", 
+            RowBox[{"Sin", "[", "\[Eta]", "]"}]}], ")"}], "*", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}]}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Cos", "[", 
+          RowBox[{
+          "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], "]"}],
+          "+", 
+         RowBox[{
+          RowBox[{"Cos", "[", 
+           RowBox[{
+           "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+           "]"}], "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}]}], "-", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], "-", 
+         RowBox[{
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{
+           "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+           "]"}]}]}], ")"}]}], "-", 
+      RowBox[{"Sin", "[", "\[Eta]", "]"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["\[Pi]", "2"]}], "\[LessEqual]", "\[Eta]", "\[LessEqual]", 
+       RowBox[{
+        FractionBox["\[Pi]", "2"], "-", "\[Alpha]"}]}], "&&", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], "\[LessEqual]", "\[Beta]", "\[LessEqual]", 
+       "\[Pi]"}], "&&", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], "\[LessEqual]", "\[Alpha]", "\[LessEqual]", 
+       "\[Pi]"}], "&&", 
+      RowBox[{"0", "<", "\[Delta]", "<", 
+       RowBox[{"\[Pi]", "-", "\[Beta]"}]}], "&&", 
+      RowBox[{"0", "\[LessEqual]", "\[Gamma]", "<", 
+       RowBox[{"\[Pi]", "-", "\[Beta]", "-", "\[Delta]"}]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Alpha]", ",", "\[Beta]", ",", "\[Eta]", ",", "\[Gamma]", ",", 
+     "\[Delta]"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9300356127071877`*^9, 3.930035847206458*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"3635949b-0456-4500-95ab-25fb78047ae0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.5000002474691583`", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Alpha]", "\[Rule]", "1.570796492902607`"}], ",", 
+     RowBox[{"\[Beta]", "\[Rule]", "1.8009306869308703`"}], ",", 
+     RowBox[{"\[Eta]", "\[Rule]", 
+      RowBox[{"-", "2.550689961245673`*^-7"}]}], ",", 
+     RowBox[{"\[Gamma]", "\[Rule]", "2.0723752197691566`*^-7"}], ",", 
+     RowBox[{"\[Delta]", "\[Rule]", "0.28273136737498666`"}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.930035858521702*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"648dd753-0ad0-4727-a392-c3b8e64df58f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], "*", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]"}], "]"}]}], "+", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]"}], "]"}]}], "+", 
+         RowBox[{"Sin", "[", "\[Eta]", "]"}]}], ")"}], "*", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+        "]"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Cos", "[", 
+           RowBox[{
+           "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+           "]"}], "*", 
+          RowBox[{"Cos", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]"}], "]"}]}], "+", 
+         
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+           "\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+           "]"}], "*", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]"}], "]"}]}], "+", 
+         
+         RowBox[{"Sin", "[", "\[Eta]", "]"}]}], ")"}], "*", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}]}]}], 
+     ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+       "]"}], "+", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+        "]"}], "*", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}]}], "-", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], "-", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Eta]", "-", "\[Gamma]"}], "]"}], "*", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Eta]", "+", "\[Beta]", "+", "\[Delta]"}], 
+        "]"}]}]}], ")"}]}], "-", 
+   RowBox[{"Sin", "[", "\[Eta]", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9300359927184772`*^9, 3.93003599763778*^9}, 
+   3.9300360385984497`*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"782148d4-d295-4add-9b8d-0e6b854731e4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"Cos", "[", 
+     RowBox[{"\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "-", "\[Eta]"}], 
+     "]"}], "-", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"\[Alpha]", "-", "\[Gamma]", "-", "\[Delta]", "+", "\[Eta]"}], 
+     "]"}], "-", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"\[Alpha]", "-", "\[Gamma]", "+", "\[Delta]", "+", "\[Eta]"}], 
+     "]"}], "+", 
+    RowBox[{"Cos", "[", 
+     RowBox[{
+     "\[Alpha]", "+", "\[Beta]", "-", "\[Gamma]", "+", "\[Delta]", "+", 
+      "\[Eta]"}], "]"}], "-", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "+", "\[Eta]"}], 
+     "]"}], "+", 
+    RowBox[{"Cos", "[", 
+     RowBox[{
+     "\[Alpha]", "+", "\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "+", 
+      "\[Eta]"}], "]"}]}], ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"\[Alpha]", "+", "\[Beta]", "+", "\[Delta]", "+", "\[Eta]"}], 
+      "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Alpha]", "-", "\[Gamma]", "+", "\[Eta]"}], "]"}]}], 
+      ")"}]}], "-", 
+    RowBox[{"2", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"\[Alpha]", "-", "\[Gamma]", "+", "\[Eta]"}], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Alpha]", "+", "\[Beta]", "+", "\[Delta]", "+", "\[Eta]"}], 
+        "]"}]}], ")"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.930036041284185*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"e154a788-0a65-440c-b7bf-30b2efd671c6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindMinimum", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "-", "\[Eta]"}],
+          "]"}], "-", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+         "\[Alpha]", "-", "\[Gamma]", "-", "\[Delta]", "+", "\[Eta]"}], "]"}],
+         "-", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+         "\[Alpha]", "-", "\[Gamma]", "+", "\[Delta]", "+", "\[Eta]"}], "]"}],
+         "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+         "\[Alpha]", "+", "\[Beta]", "-", "\[Gamma]", "+", "\[Delta]", "+", 
+          "\[Eta]"}], "]"}], "-", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "+", "\[Eta]"}],
+          "]"}], "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{
+         "\[Alpha]", "+", "\[Beta]", "+", "\[Gamma]", "+", "\[Delta]", "+", 
+          "\[Eta]"}], "]"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{
+          "\[Alpha]", "+", "\[Beta]", "+", "\[Delta]", "+", "\[Eta]"}], "]"}],
+          " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"\[Alpha]", "-", "\[Gamma]", "+", "\[Eta]"}], "]"}]}], 
+          ")"}]}], "-", 
+        RowBox[{"2", " ", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Alpha]", "-", "\[Gamma]", "+", "\[Eta]"}], "]"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"Sin", "[", 
+            RowBox[{
+            "\[Alpha]", "+", "\[Beta]", "+", "\[Delta]", "+", "\[Eta]"}], 
+            "]"}]}], ")"}]}]}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["\[Pi]", "2"]}], "\[LessEqual]", "\[Eta]", "\[LessEqual]", 
+       RowBox[{
+        FractionBox["\[Pi]", "2"], "-", "\[Alpha]"}]}], "&&", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], "\[LessEqual]", "\[Beta]", "\[LessEqual]", 
+       "\[Pi]"}], "&&", 
+      RowBox[{
+       FractionBox["\[Pi]", "2"], "\[LessEqual]", "\[Alpha]", "\[LessEqual]", 
+       "\[Pi]"}], "&&", 
+      RowBox[{"0", "<", "\[Delta]", "<", 
+       RowBox[{"\[Pi]", "-", "\[Beta]"}]}], "&&", 
+      RowBox[{"0", "\[LessEqual]", "\[Gamma]", "<", 
+       RowBox[{"\[Pi]", "-", "\[Beta]", "-", "\[Delta]"}]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\[Alpha]", ",", "\[Beta]", ",", "\[Eta]", ",", "\[Gamma]", ",", 
+     "\[Delta]"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.930036117806704*^9},
+ CellLabel->"In[3]:=",ExpressionUUID->"70b2b0cf-1b80-4497-8b53-9597ff2c021b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.5000002474691584`", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Alpha]", "\[Rule]", "1.570796492902607`"}], ",", 
+     RowBox[{"\[Beta]", "\[Rule]", "1.8009306869295392`"}], ",", 
+     RowBox[{"\[Eta]", "\[Rule]", 
+      RowBox[{"-", "2.5506899612565065`*^-7"}]}], ",", 
+     RowBox[{"\[Gamma]", "\[Rule]", "2.07237521982213`*^-7"}], ",", 
+     RowBox[{"\[Delta]", "\[Rule]", "0.2827313673753648`"}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.9300361196721153`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"3964ca40-b928-4b25-b934-00613286b760"]
+}, Open  ]]
+},
+WindowSize->{808, 599},
+WindowMargins->{{Automatic, 205}, {-55, Automatic}},
+FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"084b13e7-c566-4bbb-91a1-315fa3a82b21"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3696, 96, 157, "Input",ExpressionUUID->"3635949b-0456-4500-95ab-25fb78047ae0"],
+Cell[4279, 120, 604, 13, 37, "Output",ExpressionUUID->"648dd753-0ad0-4727-a392-c3b8e64df58f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4920, 138, 2609, 68, 115, "Input",ExpressionUUID->"782148d4-d295-4add-9b8d-0e6b854731e4"],
+Cell[7532, 208, 1603, 44, 77, "Output",ExpressionUUID->"e154a788-0a65-440c-b7bf-30b2efd671c6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9172, 257, 2693, 72, 143, "Input",ExpressionUUID->"70b2b0cf-1b80-4497-8b53-9597ff2c021b"],
+Cell[11868, 331, 604, 13, 85, "Output",ExpressionUUID->"3964ca40-b928-4b25-b934-00613286b760"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
